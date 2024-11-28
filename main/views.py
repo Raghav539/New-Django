@@ -13,7 +13,7 @@ def home(request):
 def about(request):
     site = Main.objects.get(pk=2)
 
-    return render(request,'front/about.html', {'sitename':sitename})
+    return render(request,'front/about.html', {'site':site})
 def contact(request):
     sitename="MySite|Contact"
 
